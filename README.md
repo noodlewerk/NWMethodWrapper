@@ -11,29 +11,31 @@ NWMethodWrapper provides an aspect-oriented way to insert code around method cal
 ### Code example
 The following code snippets illustrate a basic method wrapping:
 
-OrignalCode.m:
+Orignal.m:
 
     - (void)boogie {
         NSLog(@"boogie!");
     }
 
-WrapperCode.m:
+Wrapper.m:
 
-    ImpBlock beforeBlock = (ImpBlock)^void(id _self) {
-        NSLog(@"before %@ boogies", _self);
-    };
-    ImpBlock afterBlock = (ImpBlock)^void(id _self) {
-        NSLog(@"after %@ boogied", _self);
-    };
-    [NWMethodWrapper wrap:[OrignalCode class] 
-    instanceMethodForSelector:@selector(boogie) 
-    before:beforeBlock after:afterBlock];
+    - (void)wrap {
+        ImpBlock beforeBlock = (ImpBlock)^void(id _self) {
+            NSLog(@"before %@ boogies", _self);
+        };
+        ImpBlock afterBlock = (ImpBlock)^void(id _self) {
+            NSLog(@"after %@ boogied", _self);
+        };
+        [NWMethodWrapper wrap:[Orignal class] 
+        instanceMethodForSelector:@selector(boogie) 
+        before:beforeBlock after:afterBlock];
+    }
 
-If we first execute `WrapperCode` followed by `boogie`, we get:
+If we first execute `wrap` followed by `boogie`, we get:
 
-    before OriginalCode boogies
+    before Original boogies
     boogie!
-    after OriginalCode boogied
+    after Original boogied
 
 
 ### Build in XCode
