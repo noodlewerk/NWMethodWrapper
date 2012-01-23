@@ -5,7 +5,7 @@ NWMethodWrapper
 
 
 ### About
-NWMethodWrapper provides an aspect-oriented way to insert code around method calls. For example to add logging to a method without modifying its source.
+NWMethodWrapper provides an aspect-oriented way to insert code around method calls. For example to add logging to a method without modifying its source. It does this by swizzling the implementation with one that invokes custom code blocks before and after running the original implemenation.
 
 
 ### Code example
