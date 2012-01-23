@@ -27,6 +27,20 @@
     [super dealloc];
 }
 
++ (BOOL)hasClass:(Class)clas method:(Method)method {
+    unsigned int outCount = 0;
+    Method *methods = class_copyMethodList(clas, &outCount);
+    for (NSUInteger i = 0; i < outCount; i++) {
+        Method m = methods[i];
+        if (method == m) {
+            free(methods);
+            return YES;
+        }
+    }
+    free(methods);
+    return NO;
+}
+
 - (NWMethodWrapper*)initForClass:(Class)_class methodForSelector:(SEL)_selector isClassMethod:(BOOL)_isClassMethod {
     if ((self = [super init])) {
         targetClass = _class;
@@ -35,8 +49,14 @@
         
         if (isClassMethod) {
             method = class_getClassMethod(targetClass, selector);
+            if (![NWMethodWrapper hasClass:object_getClass(targetClass) method:method]) {
+                [NSException raise:@"NWMethodWrapper" format:[NSString stringWithFormat:@"Class %@ does not implement %@", targetClass, NSStringFromSelector(selector)]];
+            }
         } else {
             method = class_getInstanceMethod(targetClass, selector);
+            if (![NWMethodWrapper hasClass:targetClass method:method]) {
+                [NSException raise:@"NWMethodWrapper" format:[NSString stringWithFormat:@"Instance of %@ does not implement %@", targetClass, NSStringFromSelector(selector)]];
+            }
         }
         
         // 6 + 2 extra for _self and selector:
