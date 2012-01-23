@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10F324CC145D868B00F86E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324CB145D868B00F86E8C /* Foundation.framework */; };
+		10F324DA145D868B00F86E8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324D9145D868B00F86E8C /* SenTestingKit.framework */; };
+		10F324DC145D868B00F86E8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324DB145D868B00F86E8C /* UIKit.framework */; };
+		10F324DD145D868B00F86E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324CB145D868B00F86E8C /* Foundation.framework */; };
+		10F324E0145D868B00F86E8C /* libNWMethodWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324C8145D868B00F86E8C /* libNWMethodWrapper.a */; };
+		10F3251C145DEDD800F86E8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324DB145D868B00F86E8C /* UIKit.framework */; };
+		10F3251D145DEDD800F86E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324CB145D868B00F86E8C /* Foundation.framework */; };
+		10F3251F145DEDD800F86E8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F3251E145DEDD800F86E8C /* CoreGraphics.framework */; };
+		10F3252F145DEF7B00F86E8C /* libNWMethodWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324C8145D868B00F86E8C /* libNWMethodWrapper.a */; };
+		D7BF959A14CD9A82009151AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF959014CD9A7C009151AD /* main.m */; };
+		D7BF959B14CD9A82009151AD /* NWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF959214CD9A7C009151AD /* NWAppDelegate.m */; };
+		D7BF959C14CD9A87009151AD /* NWMethodWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF959514CD9A7C009151AD /* NWMethodWrapperTests.m */; };
+		D7BF959D14CD9A8C009151AD /* NWMethodWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF959914CD9A7C009151AD /* NWMethodWrapper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10F324DE145D868B00F86E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10F324BF145D868B00F86E8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10F324C7145D868B00F86E8C;
+			remoteInfo = NWMethodWrapper;
+		};
+		10F32530145DEF8100F86E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10F324BF145D868B00F86E8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10F324C7145D868B00F86E8C;
+			remoteInfo = NWMethodWrapper;
+		};
+		10F32532145DEF8400F86E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10F324BF145D868B00F86E8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10F324D7145D868B00F86E8C;
+			remoteInfo = NWMethodWrapperTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10F324C8145D868B00F86E8C /* libNWMethodWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNWMethodWrapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		10F324CB145D868B00F86E8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		10F324D8145D868B00F86E8C /* NWMethodWrapperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NWMethodWrapperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10F324D9145D868B00F86E8C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		10F324DB145D868B00F86E8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		10F3251A145DEDD800F86E8C /* WrapperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WrapperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10F3251E145DEDD800F86E8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7BF958F14CD9A7C009151AD /* Application-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Application-Info.plist"; sourceTree = "<group>"; };
+		D7BF959014CD9A7C009151AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7BF959114CD9A7C009151AD /* NWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWAppDelegate.h; sourceTree = "<group>"; };
+		D7BF959214CD9A7C009151AD /* NWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWAppDelegate.m; sourceTree = "<group>"; };
+		D7BF959414CD9A7C009151AD /* NWMethodWrapperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWMethodWrapperTests.h; sourceTree = "<group>"; };
+		D7BF959514CD9A7C009151AD /* NWMethodWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWMethodWrapperTests.m; sourceTree = "<group>"; };
+		D7BF959614CD9A7C009151AD /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		D7BF959814CD9A7C009151AD /* NWMethodWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWMethodWrapper.h; sourceTree = "<group>"; };
+		D7BF959914CD9A7C009151AD /* NWMethodWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWMethodWrapper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10F324C5145D868B00F86E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F324CC145D868B00F86E8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10F324D4145D868B00F86E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F324DA145D868B00F86E8C /* SenTestingKit.framework in Frameworks */,
+				10F324DC145D868B00F86E8C /* UIKit.framework in Frameworks */,
+				10F324DD145D868B00F86E8C /* Foundation.framework in Frameworks */,
+				10F324E0145D868B00F86E8C /* libNWMethodWrapper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10F32517145DEDD800F86E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F3252F145DEF7B00F86E8C /* libNWMethodWrapper.a in Frameworks */,
+				10F3251C145DEDD800F86E8C /* UIKit.framework in Frameworks */,
+				10F3251D145DEDD800F86E8C /* Foundation.framework in Frameworks */,
+				10F3251F145DEDD800F86E8C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10F324BD145D868B00F86E8C = {
+			isa = PBXGroup;
+			children = (
+				D7BF958E14CD9A7C009151AD /* Application */,
+				D7BF959714CD9A7C009151AD /* Wrapper */,
+				D7BF959314CD9A7C009151AD /* Tests */,
+				10F324CA145D868B00F86E8C /* Frameworks */,
+				10F324C9145D868B00F86E8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10F324C9145D868B00F86E8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10F324C8145D868B00F86E8C /* libNWMethodWrapper.a */,
+				10F324D8145D868B00F86E8C /* NWMethodWrapperTests.octest */,
+				10F3251A145DEDD800F86E8C /* WrapperApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10F324CA145D868B00F86E8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10F324CB145D868B00F86E8C /* Foundation.framework */,
+				10F324D9145D868B00F86E8C /* SenTestingKit.framework */,
+				10F324DB145D868B00F86E8C /* UIKit.framework */,
+				10F3251E145DEDD800F86E8C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7BF958E14CD9A7C009151AD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF959114CD9A7C009151AD /* NWAppDelegate.h */,
+				D7BF959214CD9A7C009151AD /* NWAppDelegate.m */,
+				D7BF958F14CD9A7C009151AD /* Application-Info.plist */,
+				D7BF959014CD9A7C009151AD /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D7BF959314CD9A7C009151AD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF959414CD9A7C009151AD /* NWMethodWrapperTests.h */,
+				D7BF959514CD9A7C009151AD /* NWMethodWrapperTests.m */,
+				D7BF959614CD9A7C009151AD /* Tests-Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D7BF959714CD9A7C009151AD /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF959814CD9A7C009151AD /* NWMethodWrapper.h */,
+				D7BF959914CD9A7C009151AD /* NWMethodWrapper.m */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		10F324C6145D868B00F86E8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10F324C7145D868B00F86E8C /* NWMethodWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10F324EC145D868B00F86E8C /* Build configuration list for PBXNativeTarget "NWMethodWrapper" */;
+			buildPhases = (
+				10F324C4145D868B00F86E8C /* Sources */,
+				10F324C5145D868B00F86E8C /* Frameworks */,
+				10F324C6145D868B00F86E8C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NWMethodWrapper;
+			productName = NWMethodWrapper;
+			productReference = 10F324C8145D868B00F86E8C /* libNWMethodWrapper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		10F324D7145D868B00F86E8C /* NWMethodWrapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10F324EF145D868B00F86E8C /* Build configuration list for PBXNativeTarget "NWMethodWrapperTests" */;
+			buildPhases = (
+				10F324D3145D868B00F86E8C /* Sources */,
+				10F324D4145D868B00F86E8C /* Frameworks */,
+				10F324D5145D868B00F86E8C /* Resources */,
+				10F324D6145D868B00F86E8C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10F324DF145D868B00F86E8C /* PBXTargetDependency */,
+			);
+			name = NWMethodWrapperTests;
+			productName = NWMethodWrapperTests;
+			productReference = 10F324D8145D868B00F86E8C /* NWMethodWrapperTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		10F32519145DEDD800F86E8C /* WrapperApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10F3252C145DEDD800F86E8C /* Build configuration list for PBXNativeTarget "WrapperApp" */;
+			buildPhases = (
+				10F32516145DEDD800F86E8C /* Sources */,
+				10F32517145DEDD800F86E8C /* Frameworks */,
+				10F32518145DEDD800F86E8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10F32533145DEF8400F86E8C /* PBXTargetDependency */,
+				10F32531145DEF8100F86E8C /* PBXTargetDependency */,
+			);
+			name = WrapperApp;
+			productName = WrapperApp;
+			productReference = 10F3251A145DEDD800F86E8C /* WrapperApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10F324BF145D868B00F86E8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Noodlewerk BV";
+			};
+			buildConfigurationList = 10F324C2145D868B00F86E8C /* Build configuration list for PBXProject "NWMethodWrapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 10F324BD145D868B00F86E8C;
+			productRefGroup = 10F324C9145D868B00F86E8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10F324C7145D868B00F86E8C /* NWMethodWrapper */,
+				10F324D7145D868B00F86E8C /* NWMethodWrapperTests */,
+				10F32519145DEDD800F86E8C /* WrapperApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10F324D5145D868B00F86E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10F32518145DEDD800F86E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10F324D6145D868B00F86E8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10F324C4145D868B00F86E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BF959D14CD9A8C009151AD /* NWMethodWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10F324D3145D868B00F86E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BF959C14CD9A87009151AD /* NWMethodWrapperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10F32516145DEDD800F86E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BF959A14CD9A82009151AD /* main.m in Sources */,
+				D7BF959B14CD9A82009151AD /* NWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10F324DF145D868B00F86E8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10F324C7145D868B00F86E8C /* NWMethodWrapper */;
+			targetProxy = 10F324DE145D868B00F86E8C /* PBXContainerItemProxy */;
+		};
+		10F32531145DEF8100F86E8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10F324C7145D868B00F86E8C /* NWMethodWrapper */;
+			targetProxy = 10F32530145DEF8100F86E8C /* PBXContainerItemProxy */;
+		};
+		10F32533145DEF8400F86E8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10F324D7145D868B00F86E8C /* NWMethodWrapperTests */;
+			targetProxy = 10F32532145DEF8400F86E8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10F324EA145D868B00F86E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		10F324EB145D868B00F86E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10F324ED145D868B00F86E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NWMethodWrapper.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		10F324EE145D868B00F86E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NWMethodWrapper.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		10F324F0145D868B00F86E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		10F324F1145D868B00F86E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		10F3252D145DEDD800F86E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				INFOPLIST_FILE = "Application/Application-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		10F3252E145DEDD800F86E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				INFOPLIST_FILE = "Application/Application-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10F324C2145D868B00F86E8C /* Build configuration list for PBXProject "NWMethodWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10F324EA145D868B00F86E8C /* Debug */,
+				10F324EB145D868B00F86E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10F324EC145D868B00F86E8C /* Build configuration list for PBXNativeTarget "NWMethodWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10F324ED145D868B00F86E8C /* Debug */,
+				10F324EE145D868B00F86E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10F324EF145D868B00F86E8C /* Build configuration list for PBXNativeTarget "NWMethodWrapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10F324F0145D868B00F86E8C /* Debug */,
+				10F324F1145D868B00F86E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10F3252C145DEDD800F86E8C /* Build configuration list for PBXNativeTarget "WrapperApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10F3252D145DEDD800F86E8C /* Debug */,
+				10F3252E145DEDD800F86E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10F324BF145D868B00F86E8C /* Project object */;
+}
