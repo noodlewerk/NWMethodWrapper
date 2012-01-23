@@ -63,6 +63,8 @@
 		D7BF959614CD9A7C009151AD /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		D7BF959814CD9A7C009151AD /* NWMethodWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWMethodWrapper.h; sourceTree = "<group>"; };
 		D7BF959914CD9A7C009151AD /* NWMethodWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWMethodWrapper.m; sourceTree = "<group>"; };
+		D7BF95A614CD9DA3009151AD /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D7BF95A714CD9DA3009151AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,8 @@
 		10F324BD145D868B00F86E8C = {
 			isa = PBXGroup;
 			children = (
+				D7BF95A614CD9DA3009151AD /* LICENSE.txt */,
+				D7BF95A714CD9DA3009151AD /* README.md */,
 				D7BF958E14CD9A7C009151AD /* Application */,
 				D7BF959714CD9A7C009151AD /* Wrapper */,
 				D7BF959314CD9A7C009151AD /* Tests */,
