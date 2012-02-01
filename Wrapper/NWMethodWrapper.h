@@ -36,7 +36,7 @@ NS_CLASS_AVAILABLE(10_7, 4_3)
  *  -playSource: is being called. After the first argument, optional arguments are passed, that were passed
  *  in when calling the -playSource: method. The number of arguments is currently limited to 6. Also the
  *  supported types of arguments is limited. Structs, unions and C arrays are not supported. This could be
- *  fixed in the future by using libffi to call the variadic blocks / original implemenation.
+ *  fixed in the future by using libffi to call the variadic blocks / original implementation.
  *  Note that the block is typecasted to a generic ImpBlock. This is to avoid compiler errors.
  *
  *  The +wrap:... convenience methods return an autoreleased NWMethodWrapper instance. The wrapping will be
