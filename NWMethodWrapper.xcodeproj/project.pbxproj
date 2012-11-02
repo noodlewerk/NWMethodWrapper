@@ -239,7 +239,7 @@
 		10F324BF145D868B00F86E8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Noodlewerk BV";
 			};
 			buildConfigurationList = 10F324C2145D868B00F86E8C /* Build configuration list for PBXProject "NWMethodWrapper" */;
@@ -359,6 +359,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -380,6 +381,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -395,6 +397,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/NWMethodWrapper.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_THUMB_SUPPORT = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -406,6 +409,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/NWMethodWrapper.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_THUMB_SUPPORT = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -419,6 +423,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -432,6 +437,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -447,6 +453,7 @@
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 				);
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Application/Application-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -462,6 +469,7 @@
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 				);
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Application/Application-Info.plist";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
