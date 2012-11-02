@@ -50,12 +50,12 @@
         if (isClassMethod) {
             method = class_getClassMethod(targetClass, selector);
             if (![NWMethodWrapper hasClass:object_getClass(targetClass) method:method]) {
-                [NSException raise:@"NWMethodWrapper" format:[NSString stringWithFormat:@"Class %@ does not implement %@", targetClass, NSStringFromSelector(selector)]];
+                [NSException raise:@"NWMethodWrapper" format:@"Class %@ does not implement %@", targetClass, NSStringFromSelector(selector)];
             }
         } else {
             method = class_getInstanceMethod(targetClass, selector);
             if (![NWMethodWrapper hasClass:targetClass method:method]) {
-                [NSException raise:@"NWMethodWrapper" format:[NSString stringWithFormat:@"Instance of %@ does not implement %@", targetClass, NSStringFromSelector(selector)]];
+                [NSException raise:@"NWMethodWrapper" format:@"Instance of %@ does not implement %@", targetClass, NSStringFromSelector(selector)];
             }
         }
         
@@ -146,7 +146,7 @@
             };
             
             // Replace the original implementation with our wrapper block:
-            IMP wrappedImplementation = imp_implementationWithBlock((__bridge void*)wrappedBlock);
+            IMP wrappedImplementation = imp_implementationWithBlock((void *)wrappedBlock);
             method_setImplementation(method, wrappedImplementation);
             
         } else {
