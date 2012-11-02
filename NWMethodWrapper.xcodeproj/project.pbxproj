@@ -16,6 +16,7 @@
 		10F3251D145DEDD800F86E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324CB145D868B00F86E8C /* Foundation.framework */; };
 		10F3251F145DEDD800F86E8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F3251E145DEDD800F86E8C /* CoreGraphics.framework */; };
 		10F3252F145DEF7B00F86E8C /* libNWMethodWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F324C8145D868B00F86E8C /* libNWMethodWrapper.a */; };
+		B33009B81644078300B4A3B4 /* NWMethodWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BF959814CD9A7C009151AD /* NWMethodWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BF959A14CD9A82009151AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF959014CD9A7C009151AD /* main.m */; };
 		D7BF959B14CD9A82009151AD /* NWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF959214CD9A7C009151AD /* NWAppDelegate.m */; };
 		D7BF959C14CD9A87009151AD /* NWMethodWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF959514CD9A7C009151AD /* NWMethodWrapperTests.m */; };
@@ -172,6 +173,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33009B81644078300B4A3B4 /* NWMethodWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +368,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -387,6 +390,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
